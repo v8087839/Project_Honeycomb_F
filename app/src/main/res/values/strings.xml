@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Project_Honeycomb_F</string>
+    <string name="loginB">Log-In</string>
+    <string name="signupB">Sign-Up</string>
+    <string name="Welcome">Welcome to (insert app name here)</string>
+
 </resources>
