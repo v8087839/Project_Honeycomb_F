@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Project_Honeycomb_F"
-        android:fullBackupContent="">
+        android:fullBackupContent="true">
         <activity
             android:name=".HomeActivity"
             android:exported="false" />
