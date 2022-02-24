@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "312814739670",
+    "project_id": "project-honeycomb-f",
+    "storage_bucket": "project-honeycomb-f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:312814739670:android:ddf0dd224f3089bfac6977",
+        "android_client_info": {
+          "package_name": "uk.ac.tees.v8087839.project_honeycomb_f"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "312814739670-8h8jte2tua9auu853rqq9726v0c0u2j6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrKEM1vUpukuBL6NOj7kdJoL0nkTcmaW0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "312814739670-8h8jte2tua9auu853rqq9726v0c0u2j6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
