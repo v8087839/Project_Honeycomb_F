@@ -4,12 +4,15 @@
 
     <application
         android:allowBackup="true"
+        android:fullBackupContent="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Project_Honeycomb_F"
-        android:fullBackupContent="true">
+        android:theme="@style/Theme.Project_Honeycomb_F">
+        <activity
+            android:name=".Calendar"
+            android:exported="false" />
         <activity
             android:name=".HomeActivity"
             android:exported="false" />
