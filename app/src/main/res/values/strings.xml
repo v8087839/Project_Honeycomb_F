@@ -23,4 +23,6 @@
     <string name="signupB">Sign-Up</string>
     <string name="Welcome">Welcome to (insert app name here)</string>
     <string name="ToDo">Image Description</string>
+    <string name="previousMonthButtonText"><![CDATA[<-]]></string>
+    <string name="nextMonthButtonText"><![CDATA[->]]></string>
 </resources>
