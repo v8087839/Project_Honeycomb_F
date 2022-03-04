@@ -1,5 +1,24 @@
 <resources>
     <string name="app_name">Project_Honeycomb_F</string>
+    <string name="SignInButtonText">Sign-in</string>
+    <string name="firstNameBoxText">Enter First Name Here</string>
+    <string name="secondNameBoxText">Enter Second Name Here</string>
+    <string name="emailBoxText">Enter Email Address Here</string>
+    <string name="passwordBoxText">Enter Password Here</string>
+    <string name="confirmPasswordBoxText">Enter Password Again Here</string>
+    <string name="firstNameEntry">null</string>
+    <string name="secondNameEntry">null</string>
+    <string name="emailEntry">null</string>
+    <string name="passwordEntry">null</string>
+    <string name="signInText">Do you already have an account?</string>
+    <string name="firstNameText">First name:</string>
+    <string name="secondNameText">Second name:</string>
+    <string name="emailText">Email Address:</string>
+    <string name="passwordText">Password:</string>
+    <string name="passwordConfirmText">Confirm password:</string>
+    <string name="titleText">CREATE AN ACCOUNT</string>
+    <string name="confirmDetailsButtonText">Confirm Above Details</string>
+    <string name="accountCreationText">Below you can enter all your details, then press the button to confirm them.</string>
     <string name="loginB">Log-In</string>
     <string name="signupB">Sign-Up</string>
     <string name="Welcome">Welcome to (insert app name here)</string>
