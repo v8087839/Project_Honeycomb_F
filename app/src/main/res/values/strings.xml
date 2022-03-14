@@ -45,4 +45,11 @@
     <string name="attachment_summary_on">Automatically download attachments for incoming emails
     </string>
     <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="message">Message</string>
+    <string name="chat">Chat</string>
+    <string name="profile">Profile</string>
+    <string name="communication">Communication</string>
+    <string name="string_communication" />
+    <string name="share">Share</string>
+    <string name="send">Send</string>
 </resources>
