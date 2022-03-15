@@ -31,6 +31,7 @@
         android:layout_marginEnd="64dp"
         android:layout_marginBottom="465dp"
         android:text="@string/accountCreationText"
+        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.571"
@@ -182,7 +183,7 @@
         app:layout_constraintHorizontal_bias="0.92"
         app:layout_constraintStart_toEndOf="@+id/Password1"
         app:layout_constraintTop_toBottomOf="@+id/EmailType"
-        tools:ignore="SpeakableTextPresentCheck,DuplicateSpeakableTextCheck" />
+        tools:ignore="SpeakableTextPresentCheck,DuplicateSpeakableTextCheck,DuplicateClickableBoundsCheck" />
 
     <EditText
         android:id="@+id/Password2Type"

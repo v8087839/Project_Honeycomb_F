@@ -19,11 +19,11 @@
     <string name="passwordText">Password:</string>
     <string name="passwordConfirmText">Confirm password:</string>
     <string name="CreateAccount">Create Account</string>
-    <string name="confirmDetailsButtonText">Confirm and Sign-Up</string>
-    <string name="accountCreationText">Welcome to "Timetable Friends. Enter your details to Sign-Up. Click the confirm button when you are done!</string>
+    <string name="confirmDetailsButtonText">Sign-Up</string>
+    <string name="accountCreationText">Welcome to BizzBuzz. Enter your details to Sign-Up.</string>
     <string name="loginB">Log-In</string>
     <string name="signupB">Sign-Up</string>
-    <string name="Welcome">Welcome to "Timetable Friends</string>
+    <string name="Welcome">Welcome to BizzBuzz</string>
     <string name="ToDo">Image Description</string>
     <string name="title_activity_main_menu">MainMenu</string>
     <string name="tab_text_1">Tab 1</string>

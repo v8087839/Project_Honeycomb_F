@@ -53,18 +53,7 @@ public class LogIn extends AppCompatActivity {
                 String email = mEmail.getText().toString().trim();
                 String password = mPassword.getText().toString().trim();
 
-                if (TextUtils.isEmpty(email)) {
-                    mEmail.setError("Email Required");
-                    return;
-                }
-                if(TextUtils.isEmpty(password)){
-                    mPassword.setError("Password Required");
-                    return;
-                }
-                if(password.length() < 6){
-                    mPassword.setError("Passwords must be 6 or more characters");
-                    return;
-                }
+
                 progressBar.setVisibility(View.VISIBLE);
 
                 //Authentication
@@ -76,7 +65,8 @@ public class LogIn extends AppCompatActivity {
                             startActivity(new Intent(getApplicationContext(), MainMenu.class));
                         }
                         else{
-                            Toast.makeText(LogIn.this, "Error! " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                            //Toast.makeText(LogIn.this, "Error! " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                            progressBar.setVisibility(View.INVISIBLE);
                         }
                     }
                 });
