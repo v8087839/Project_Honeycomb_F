@@ -57,4 +57,5 @@
     <string name="tab_events_text">EVENTS</string>
     <string name="tab_friends_text">FRIENDS</string>
     <string name="tab_chat_text">CHAT</string>
+    <string name="editProfileButton">Edit Profile</string>
 </resources>

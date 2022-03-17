@@ -14,12 +14,14 @@ import androidx.appcompat.app.AppCompatActivity;
 //import android.view.Menu;
 //import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 
 import uk.ac.tees.v8087839.project_honeycomb_f.ui.main.SectionsPagerAdapter;
 import uk.ac.tees.v8087839.project_honeycomb_f.databinding.ActivityMainMenuBinding;
 
 public class MainMenu extends AppCompatActivity {
 
+    Button editProfile;
     private ActivityMainMenuBinding binding;
 
     @Override
@@ -36,11 +38,20 @@ public class MainMenu extends AppCompatActivity {
         tabs.setupWithViewPager(viewPager);
         FloatingActionButton fab = binding.fab;
 
+        editProfile = findViewById(R.id.editProfile);
+
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Snackbar.make(view, "This should take you to the settings page", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
+            }
+        });
+
+        editProfile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), Edit_Profile.class));
             }
         });
 
