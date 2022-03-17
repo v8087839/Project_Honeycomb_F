@@ -26,8 +26,6 @@
     <string name="Welcome">Welcome to BizzBuzz</string>
     <string name="ToDo">Image Description</string>
     <string name="title_activity_main_menu">MainMenu</string>
-    <string name="tab_text_1">Tab 1</string>
-    <string name="tab_text_2">Tab 2</string>
     <string name="todo">TODO</string>
     <string name="title_activity_settings">Settings</string>
 
@@ -54,4 +52,9 @@
     <string name="send">Send</string>
     <string name="forgot_password">Forgot Password?</string>
     <string name="mainMenuTitle">Main Menu | Bizz Buzz</string>
+    <string name="tab_feed_text">FEED</string>
+    <string name="tab_timetable_text">TIMETABLE</string>
+    <string name="tab_events_text">EVENTS</string>
+    <string name="tab_friends_text">FRIENDS</string>
+    <string name="tab_chat_text">CHAT</string>
 </resources>

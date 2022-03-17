@@ -40,5 +40,6 @@
         android:layout_gravity="bottom|end"
         android:layout_marginEnd="@dimen/fab_margin"
         android:layout_marginBottom="16dp"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+        app:backgroundTint="@color/purple_500"
+        app:srcCompat="@android:drawable/ic_menu_manage" />
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

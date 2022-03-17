@@ -17,7 +17,9 @@ import uk.ac.tees.v8087839.project_honeycomb_f.R;
 public class SectionsPagerAdapter extends FragmentPagerAdapter {
 
     @StringRes
-    private static final int[] TAB_TITLES = new int[]{R.string.tab_text_1, R.string.tab_text_2};
+    private static final int[] TAB_TITLES = new int[]{R.string.tab_feed_text,
+            R.string.tab_timetable_text, R.string.tab_events_text,
+            R.string.tab_friends_text, R.string.tab_chat_text};
     private final Context mContext;
 
     public SectionsPagerAdapter(Context context, FragmentManager fm) {
@@ -41,6 +43,6 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
     @Override
     public int getCount() {
         // Show 2 total pages.
-        return 2;
+        return 5;
     }
 }
