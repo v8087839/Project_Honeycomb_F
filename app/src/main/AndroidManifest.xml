@@ -13,6 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Project_Honeycomb_F">
         <activity
+            android:name=".Edit_Profile"
+            android:exported="false" />
+        <activity
             android:name=".Settings"
             android:exported="false"
             android:label="@string/title_activity_settings" />
@@ -27,13 +30,10 @@
             android:exported="false" />
         <activity
             android:name=".MainMenu"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
-
-
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

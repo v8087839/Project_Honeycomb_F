@@ -107,6 +107,10 @@ public class SignUp extends AppCompatActivity {
                             user.put("fName", firstName);
                             user.put("lName", LastName);
                             user.put("email", email);
+                            user.put("Phone", null);
+                            user.put("DName", null);
+                            user.put("DOB", null);
+
                             documentReference.set(user);
                             startActivity(new Intent(getApplicationContext(), MainMenu.class));
                         }
