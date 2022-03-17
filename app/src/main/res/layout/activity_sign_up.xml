@@ -100,7 +100,7 @@
         android:layout_marginStart="136dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="136dp"
-        android:text="@string/confirmDetailsButtonText"
+        android:text="@string/CreateAccount"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Password2" />
@@ -109,8 +109,9 @@
         android:id="@+id/HaveAnAccount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="8dp"
         android:text="@string/signInText"
+        android:textColor="#4152E6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/SignUpButton" />

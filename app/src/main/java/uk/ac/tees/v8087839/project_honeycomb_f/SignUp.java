@@ -17,6 +17,7 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 
@@ -72,6 +73,15 @@ public class SignUp extends AppCompatActivity {
                 String firstName = mFirstName.getText().toString();
                 String LastName = mSurname.getText().toString();
 
+                if (TextUtils.isEmpty(firstName)) {
+                    mFirstName.setError("First Name can't be blank");
+                    return;
+                }
+                if (TextUtils.isEmpty(LastName)) {
+                    mSurname.setError("Last Name can't be blank");
+                    return;
+                }
+
                 if (TextUtils.isEmpty(email)) {
                     mEmail.setError("Email Address can't be blank");
                     return;
@@ -100,6 +110,8 @@ public class SignUp extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()) {
+                            FirebaseUser fuser = fAuth.getCurrentUser();
+                            fuser.sendEmailVerification();
                             Toast.makeText(SignUp.this, "User Created", Toast.LENGTH_SHORT).show();
                             userId = fAuth.getCurrentUser().getUid();
                             DocumentReference documentReference = fStore.collection("user").document(userId);
@@ -110,8 +122,11 @@ public class SignUp extends AppCompatActivity {
                             user.put("Phone", null);
                             user.put("DName", null);
                             user.put("DOB", null);
+                            user.put("Verified", false);
 
                             documentReference.set(user);
+
+
                             startActivity(new Intent(getApplicationContext(), MainMenu.class));
                         }
                         else {

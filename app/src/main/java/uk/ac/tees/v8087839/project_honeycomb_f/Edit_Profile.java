@@ -4,9 +4,13 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.EventListener;
@@ -15,7 +19,7 @@ import com.google.firebase.firestore.FirebaseFirestoreException;
 
 public class Edit_Profile extends AppCompatActivity {
 
-    TextView displayName, firstName, lastName, email, Dob, Phone;
+    TextView displayName, firstName, lastName, email, Dob, Phone, verifyText, verifyButton;
     FirebaseAuth FAuth;
     FirebaseFirestore FStore;
     String userId;
@@ -31,10 +35,31 @@ public class Edit_Profile extends AppCompatActivity {
         lastName = findViewById(R.id.LastNameProfile);
         firstName = findViewById(R.id.firstNameProfile);
         displayName = findViewById(R.id.DiaplayName);
+        verifyText = findViewById(R.id.VerifyText);
+        verifyButton = findViewById(R.id.VerifyButton);
 
         FAuth = FirebaseAuth.getInstance();
         FStore = FirebaseFirestore.getInstance();
         userId = FAuth.getCurrentUser().getUid();
+        FirebaseUser user = FAuth.getCurrentUser();
+
+        if(!user.isEmailVerified()){
+          verifyText.setVisibility(View.VISIBLE);
+          verifyButton.setVisibility(View.VISIBLE);
+
+          verifyButton.setOnClickListener(new View.OnClickListener() {
+              @Override
+              public void onClick(View view) {
+                  user.sendEmailVerification();
+                  Toast.makeText(view.getContext(), "Verification Email Sent", Toast.LENGTH_SHORT).show();
+              }
+          });
+
+
+
+
+
+        }
 
         DocumentReference documentReference = FStore.collection("user").document(userId);
         documentReference.addSnapshotListener(this, new EventListener<DocumentSnapshot>() {
