@@ -34,7 +34,7 @@ public class PageViewModel extends ViewModel {
             }
             else
             {
-                return "Ooops this isn't supposed to happen here is the input: " + input;
+                return "Oops this isn't supposed to happen here is the input: " + input;
             }
         }
     });
