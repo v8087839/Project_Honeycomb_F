@@ -53,4 +53,5 @@
     <string name="share">Share</string>
     <string name="send">Send</string>
     <string name="forgot_password">Forgot Password?</string>
+    <string name="mainMenuTitle">Main Menu | Bizz Buzz</string>
 </resources>
