@@ -37,6 +37,7 @@ public class LogIn extends AppCompatActivity {
         mLoginButton = findViewById(R.id.button);
         mCreateAccount = findViewById(R.id.textView4);
 
+
         fAuth = FirebaseAuth.getInstance();
 
         mCreateAccount.setOnClickListener(new View.OnClickListener() {
