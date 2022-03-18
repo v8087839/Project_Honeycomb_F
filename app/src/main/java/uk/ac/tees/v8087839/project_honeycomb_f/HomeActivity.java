@@ -5,26 +5,21 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
-import android.view.View;
 
 public class HomeActivity extends AppCompatActivity {
     Button SignUpButton;
-
+    Button LogInButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        SignUpButton = findViewById(R.id.SignUp);
-        SignUpButton.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v) {
-                openNewActivity();
-            }
-        });
 
-    }
-    public void openNewActivity(){
-        Intent intent = new Intent(this, CreateAccount.class);
-        startActivity(intent);
+        SignUpButton = findViewById(R.id.SignUp);
+        LogInButton = findViewById(R.id.LogIn);
+
+
+        SignUpButton.setOnClickListener(view -> startActivity(new Intent(getApplicationContext(), SignUp.class)));
+
+        LogInButton.setOnClickListener(view -> startActivity(new Intent(getApplicationContext(), LogIn.class)));
     }
 }

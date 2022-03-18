@@ -7,10 +7,11 @@
         <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleJvm" value="11" />
         <option name="modules">
           <set>
-            <option value="/home/scm-studs/w9093284/AndroidStudioProjects/Project_Honeycomb_F" />
-            <option value="/home/scm-studs/w9093284/AndroidStudioProjects/Project_Honeycomb_F/app" />
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
