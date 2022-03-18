@@ -13,7 +13,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="16dp"
-        app:layout_constraintEnd_toStartOf="@+id/DiaplayName"
+        app:layout_constraintEnd_toStartOf="@+id/DisplayName"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5"
         tools:srcCompat="@tools:sample/avatars" />
@@ -74,7 +74,7 @@
         app:layout_constraintTop_toBottomOf="@+id/LastNameProfile" />
 
     <EditText
-        android:id="@+id/DiaplayName"
+        android:id="@+id/DisplayName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="22dp"
