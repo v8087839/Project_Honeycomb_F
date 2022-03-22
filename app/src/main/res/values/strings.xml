@@ -1,28 +1,66 @@
 <resources>
     <string name="app_name">Project_Honeycomb_F</string>
-    <string name="SignInButtonText">Sign-in</string>
-    <string name="firstNameBoxText">Enter First Name Here</string>
-    <string name="secondNameBoxText">Enter Second Name Here</string>
-    <string name="emailBoxText">Enter Email Address Here</string>
-    <string name="passwordBoxText">Enter Password Here</string>
-    <string name="confirmPasswordBoxText">Enter Password Again Here</string>
+    <string name="SignUpButton">Sign-Up</string>
+    <string name="firstNameBoxText">First Name</string>
+    <string name="secondNameBoxText">Last Name</string>
+    <string name="emailBoxText">Email Address</string>
+    <string name="passwordBoxText">Password</string>
+    <string name="confirmPasswordBoxText">Re-Password</string>
     <string name="firstNameEntry">null</string>
     <string name="secondNameEntry">null</string>
     <string name="emailEntry">null</string>
     <string name="passwordEntry">null</string>
-    <string name="signInText">Do you already have an account?</string>
+    <string name="signInText">Do you already have an account? Click here to Log-In.</string>
+
+    <string name="signupText">Don\'t have an account? Create one here!.</string>
     <string name="firstNameText">First name:</string>
-    <string name="secondNameText">Second name:</string>
+    <string name="secondNameText">Last name:</string>
     <string name="emailText">Email Address:</string>
     <string name="passwordText">Password:</string>
     <string name="passwordConfirmText">Confirm password:</string>
-    <string name="titleText">CREATE AN ACCOUNT</string>
-    <string name="confirmDetailsButtonText">Confirm Above Details</string>
-    <string name="accountCreationText">Below you can enter all your details, then press the button to confirm them.</string>
+    <string name="CreateAccount">Create Account</string>
+    <string name="confirmDetailsButtonText">Sign-Up</string>
+    <string name="accountCreationText">Welcome to BizzBuzz. Enter your details to Sign-Up.</string>
     <string name="loginB">Log-In</string>
     <string name="signupB">Sign-Up</string>
-    <string name="Welcome">Welcome to (insert app name here)</string>
+    <string name="Welcome">Welcome to BizzBuzz</string>
     <string name="ToDo">Image Description</string>
+
     <string name="previousMonthButtonText"><![CDATA[<-]]></string>
     <string name="nextMonthButtonText"><![CDATA[->]]></string>
+
+    <string name="title_activity_main_menu">MainMenu</string>
+    <string name="todo">TODO</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="message">Message</string>
+    <string name="chat">Chat</string>
+    <string name="profile">Profile</string>
+    <string name="communication">Communication</string>
+    <string name="string_communication" />
+    <string name="share">Share</string>
+    <string name="send">Send</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="mainMenuTitle">Main Menu | Bizz Buzz</string>
+    <string name="tab_feed_text">FEED</string>
+    <string name="tab_timetable_text">TIMETABLE</string>
+    <string name="tab_events_text">EVENTS</string>
+    <string name="tab_friends_text">FRIENDS</string>
+    <string name="tab_chat_text">CHAT</string>
+    <string name="editProfileButton">Edit Profile</string>
+>>>>>>> master
 </resources>
