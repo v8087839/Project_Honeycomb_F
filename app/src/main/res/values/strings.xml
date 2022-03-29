@@ -67,4 +67,13 @@
     <string name="FeedbackBodyHint">Feedback Here</string>
     <string name="FeedbackCancel"><![CDATA[Cancel & Return To Main Menu]]></string>
     <string name="FeedbackSend"><![CDATA[Send & Return To Main Menu]]></string>
+    <string name="BugsDesc">Here you can report any bugs you have come across. You can help us keep the app bug-free by telling us the page you come across the bug, the device you are on and what the bug did.</string>
+    <string name="BugsDeviceText">Enter your device here:</string>
+    <string name="BugsDeviceHint">Device Here</string>
+    <string name="BugsPageText">Enter the page here:</string>
+    <string name="BugsPageHint">Page Here</string>
+    <string name="BugsExplanationText">Give an explanation of the bug (How you came across it &amp; What the bug did) *Not required</string>
+    <string name="BugsExplanationHint">Explanation Here</string>
+    <string name="BugsSend">Send &amp; Return To Main Menu</string>
+    <string name="BugsCancel">Cancel &amp; Return To Main Menu</string>
 </resources>
