@@ -61,4 +61,10 @@
     <string name="FeedbackTitle">Feedback</string>
     <string name="ReportBugsTitle">Report Bugs</string>
     <string name="FeedbackDesc">Here you can provide feedback to the developers to help us to improve the app and the experience it provides.</string>
+    <string name="FeedbackHeadText">Enter feedback subject here:</string>
+    <string name="FeedbackBody">Enter your feedback below:</string>
+    <string name="FeedbackHeadHint">Feedback Subject Here</string>
+    <string name="FeedbackBodyHint">Feedback Here</string>
+    <string name="FeedbackCancel"><![CDATA[Cancel & Return To Main Menu]]></string>
+    <string name="FeedbackSend"><![CDATA[Send & Return To Main Menu]]></string>
 </resources>
