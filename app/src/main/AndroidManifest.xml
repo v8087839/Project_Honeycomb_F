@@ -2,8 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="uk.ac.tees.v8087839.project_honeycomb_f">
 
-    <uses-permission android:name="android.permission.INTERNET" />
-
     <application
         android:allowBackup="true"
         android:fullBackupContent="true"
@@ -12,6 +10,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Project_Honeycomb_F">
+        <activity
+            android:name=".EventEditActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WeekViewActivity"
+            android:exported="false" />
         <activity
             android:name=".Edit_Profile"
             android:exported="false" />
@@ -25,7 +29,6 @@
         <activity
             android:name=".SignUp"
             android:exported="false" />
-        android:theme="@style/Theme.Project_Honeycomb_F">
         <activity
             android:name=".Calendar"
             android:exported="false" />
@@ -45,5 +48,7 @@
             </intent-filter>
         </activity>
     </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>

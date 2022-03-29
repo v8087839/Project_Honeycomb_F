@@ -62,5 +62,7 @@
     <string name="tab_friends_text">FRIENDS</string>
     <string name="tab_chat_text">CHAT</string>
     <string name="editProfileButton">Edit Profile</string>
->>>>>>> master
+    <string name="weeklyButtonText">Weekly</string>
+    <string name="newEventButtonText">New Event</string>
+    >>>>>>> master
 </resources>
