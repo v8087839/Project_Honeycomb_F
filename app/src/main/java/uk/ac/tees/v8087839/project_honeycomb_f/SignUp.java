@@ -50,11 +50,11 @@ public class SignUp extends AppCompatActivity {
         fStore = FirebaseFirestore.getInstance();
         progressBar = findViewById(R.id.progressBar);
 
-        //Pre-registered Comment out to test
-        //if(fAuth.getCurrentUser() != null) {
-        //    startActivity(new Intent(getApplicationContext(), BasicMenu.class));
-        //    finish();
-        //}
+
+        if(fAuth.getCurrentUser() != null) {
+            startActivity(new Intent(getApplicationContext(), MainMenu.class));
+            finish();
+        }
 
         mLogIn.setOnClickListener(new View.OnClickListener() {
             @Override
