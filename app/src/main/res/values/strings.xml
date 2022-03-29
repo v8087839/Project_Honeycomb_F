@@ -58,4 +58,7 @@
     <string name="tab_friends_text">FRIENDS</string>
     <string name="tab_chat_text">CHAT</string>
     <string name="editProfileButton">Edit Profile</string>
+    <string name="FeedbackTitle">Feedback</string>
+    <string name="ReportBugsTitle">Report Bugs</string>
+    <string name="FeedbackDesc">Here you can provide feedback to the developers to help us to improve the app and the experience it provides.</string>
 </resources>
