@@ -8,12 +8,11 @@ import android.widget.TextView;
 
 public class Feedback extends AppCompatActivity
 {
-
+    //Initialising UI Elements
     Button Send;
     Button Back;
     TextView FeedbackHead;
     TextView FeedbackBody;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
