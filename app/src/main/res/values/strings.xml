@@ -78,4 +78,6 @@
     <string name="BugsCancel">Cancel &amp; Return To Main Menu</string>
     <string name="ReportBugsAccess">Report a bug</string>
     <string name="FeedbackAccess">Give some feedback to the devs</string>
+    <string name="SettingsButton">Settings</string>
+    <string name="SignOutButton">SignOut</string>
 </resources>
