@@ -58,4 +58,26 @@
     <string name="tab_friends_text">FRIENDS</string>
     <string name="tab_chat_text">CHAT</string>
     <string name="editProfileButton">Edit Profile</string>
+    <string name="FeedbackTitle">Feedback</string>
+    <string name="ReportBugsTitle">Report Bugs</string>
+    <string name="FeedbackDesc">Here you can provide feedback to the developers to help us to improve the app and the experience it provides.</string>
+    <string name="FeedbackHeadText">Enter feedback subject here:</string>
+    <string name="FeedbackBody">Enter your feedback below:</string>
+    <string name="FeedbackHeadHint">Feedback Subject Here</string>
+    <string name="FeedbackBodyHint">Feedback Here</string>
+    <string name="FeedbackCancel"><![CDATA[Cancel & Return To Main Menu]]></string>
+    <string name="FeedbackSend"><![CDATA[Send & Return To Main Menu]]></string>
+    <string name="BugsDesc">Here you can report any bugs you have come across. You can help us keep the app bug-free by telling us the page you come across the bug, the device you are on and what the bug did.</string>
+    <string name="BugsDeviceText">Enter your device here:</string>
+    <string name="BugsDeviceHint">Device Here</string>
+    <string name="BugsPageText">Enter the page here:</string>
+    <string name="BugsPageHint">Page Here</string>
+    <string name="BugsExplanationText">Give an explanation of the bug (How you came across it &amp; What the bug did) *Not required</string>
+    <string name="BugsExplanationHint">Explanation Here</string>
+    <string name="BugsSend">Send &amp; Return To Main Menu</string>
+    <string name="BugsCancel">Cancel &amp; Return To Main Menu</string>
+    <string name="ReportBugsAccess">Report a bug</string>
+    <string name="FeedbackAccess">Give some feedback to the devs</string>
+    <string name="SettingsButton">Settings</string>
+    <string name="SignOutButton">SignOut</string>
 </resources>
