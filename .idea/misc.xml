@@ -3,9 +3,6 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="../../../../../home/scm-studs/v8087839/AndroidStudioProjects/Project_Honeycomb_F2.0/app/src/main/res/layout/activity_calendar.xml" value="0.23385416666666667" />
-        <entry key="../../../../../home/scm-studs/v8087839/AndroidStudioProjects/Project_Honeycomb_F2.0/app/src/main/res/layout/activity_week_view.xml" value="0.23385416666666667" />
-        <entry key="../../../../../home/scm-studs/v8087839/AndroidStudioProjects/Project_Honeycomb_F2.0/app/src/main/res/layout/event_cell.xml" value="0.23385416666666667" />
         <entry key="../../../../../home/scm-studs/w9093284/Desktop/App/app/src/main/res/layout/activity_edit_profile.xml" value="0.296195652173913" />
         <entry key="../../../../../home/scm-studs/w9093284/Desktop/App/app/src/main/res/layout/activity_home.xml" value="0.296195652173913" />
         <entry key="../../../../../home/scm-studs/w9093284/Desktop/App/app/src/main/res/layout/activity_main.xml" value="0.296195652173913" />
@@ -16,6 +13,11 @@
         <entry key="..\:/Users/alesh/AndroidStudioProjects/Project_Honeycomb_F/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/alesh/AndroidStudioProjects/Project_Honeycomb_F/app/src/main/res/layout/splashfile.xml" value="0.1" />
         <entry key="..\:/Users/alesh/AndroidStudioProjects/Project_Honeycomb_F/app/src/main/res/layout/welcome.xml" value="0.14375" />
+        <entry key="..\:/Users/nalyd/AndroidStudioProjects/Project_Honeycomb_F/app/src/main/res/layout/activity_calendar.xml" value="0.2015625" />
+        <entry key="..\:/Users/nalyd/AndroidStudioProjects/Project_Honeycomb_F/app/src/main/res/layout/activity_event_edit.xml" value="0.2015625" />
+        <entry key="..\:/Users/nalyd/AndroidStudioProjects/Project_Honeycomb_F/app/src/main/res/layout/activity_week_view.xml" value="0.2015625" />
+        <entry key="..\:/Users/nalyd/AndroidStudioProjects/Project_Honeycomb_F/app/src/main/res/layout/calendar_cell.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/nalyd/AndroidStudioProjects/Project_Honeycomb_F/app/src/main/res/layout/event_cell.xml" value="0.2015625" />
         <entry key="..\:/Users/simon/AndroidStudioProjects/Project_Honeycomb_F/app/src/main/res/layout/settings_activity.xml" value="0.27049180327868855" />
       </map>
     </option>

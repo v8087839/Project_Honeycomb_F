@@ -64,5 +64,9 @@
     <string name="editProfileButton">Edit Profile</string>
     <string name="weeklyButtonText">Weekly</string>
     <string name="newEventButtonText">New Event</string>
+    <string name="eventNameTextViewText">Name:</string>
+    <string name="eventDateTextViewText">Date</string>
+    <string name="eventTimeTextViewText">Time</string>
+    <string name="saveEventButtonText">Save</string>
     >>>>>>> master
 </resources>

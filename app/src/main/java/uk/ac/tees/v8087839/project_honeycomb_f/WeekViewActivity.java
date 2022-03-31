@@ -5,15 +5,18 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 
 import static uk.ac.tees.v8087839.project_honeycomb_f.CalendarUtils.daysInMonthArray;
+import static uk.ac.tees.v8087839.project_honeycomb_f.CalendarUtils.daysInWeekArray;
 import static uk.ac.tees.v8087839.project_honeycomb_f.CalendarUtils.monthYearFromDate;
 
 public class WeekViewActivity extends AppCompatActivity implements CalendarAdapter.OnItemListener{
@@ -33,14 +36,15 @@ public class WeekViewActivity extends AppCompatActivity implements CalendarAdapt
     @RequiresApi(api = Build.VERSION_CODES.O)
     private void setWeekView() {
         monthYearText.setText(monthYearFromDate(CalendarUtils.selectedDate));
-        ArrayList<String> daysInMonth = daysInMonthArray(CalendarUtils.selectedDate);
+        ArrayList<LocalDate> days = daysInWeekArray(CalendarUtils.selectedDate);
 
-        CalendarAdapter calendarAdapter = new CalendarAdapter(daysInMonth, this);
+        CalendarAdapter calendarAdapter = new CalendarAdapter(days, this);
         RecyclerView.LayoutManager layoutManager = new GridLayoutManager(getApplicationContext(), 7);
         calendarRecyclerview.setLayoutManager(layoutManager);
         calendarRecyclerview.setAdapter(calendarAdapter);
 
     }
+
 
     private void initWidgets() {
         calendarRecyclerview = findViewById(R.id.calendarRecyclerView);
@@ -61,12 +65,12 @@ public class WeekViewActivity extends AppCompatActivity implements CalendarAdapt
 
     @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
-    public void onItemClick(int position, String dayText) {
-        String message = "Selected Date " + dayText + " " + monthYearFromDate(CalendarUtils.selectedDate);
-        Toast.makeText(this,message, Toast.LENGTH_LONG).show();
-
+    public void onItemClick(int position, LocalDate date) {
+        CalendarUtils.selectedDate = date;
+        setWeekView();
     }
 
     public void NewEventAction(View view) {
+        startActivity(new Intent(this, EventEditActivity.class));
     }
 }

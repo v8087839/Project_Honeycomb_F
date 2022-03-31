@@ -1,9 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".EventEditActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="@string/eventNameTextViewText"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:textColor="@color/black">
+    </TextView>
+
+    <EditText
+        android:id="@+id/eventNameET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:ems="10"
+        android:inputType="text">
+    </EditText>
+
+    <TextView
+        android:id="@+id/eventDateTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="@string/eventDateTextViewText"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:textColor="@color/black">
+    </TextView>
+
+    <TextView
+        android:id="@+id/eventTimeTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="@string/eventTimeTextViewText"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:textColor="@color/black">
+    </TextView>
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/saveEventButtonText"
+        android:textColor="@color/blue"
+        android:background="@null"
+        android:textStyle="bold"
+        android:onClick="saveEventAction"
+        android:layout_gravity="center"
+        android:textSize="20sp">
+    </Button>
+
+</LinearLayout>

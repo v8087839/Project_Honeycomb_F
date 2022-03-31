@@ -37,7 +37,7 @@ public class Calendar extends AppCompatActivity implements CalendarAdapter.OnIte
     @RequiresApi(api = Build.VERSION_CODES.O)
     private void setMonthView() {
         monthYearText.setText(monthYearFromDate(CalendarUtils.selectedDate));
-        ArrayList<String> daysInMonth = daysInMonthArray(CalendarUtils.selectedDate);
+        ArrayList<LocalDate> daysInMonth = daysInMonthArray(CalendarUtils.selectedDate);
 
         CalendarAdapter calendarAdapter = new CalendarAdapter(daysInMonth, this);
         RecyclerView.LayoutManager layoutManager = new GridLayoutManager(getApplicationContext(), 7);
@@ -65,10 +65,10 @@ public class Calendar extends AppCompatActivity implements CalendarAdapter.OnIte
 
     @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
-    public void onItemClick(int position, String dayText) {
-        if (dayText.equals("")){
-            String message = "Selected Date " + dayText + " " + monthYearFromDate(CalendarUtils.selectedDate);
-            Toast.makeText(this,message, Toast.LENGTH_LONG).show();
+    public void onItemClick(int position, LocalDate date) {
+        if (date != null){
+            CalendarUtils.selectedDate = date;
+            setMonthView();
         }
     }
 
