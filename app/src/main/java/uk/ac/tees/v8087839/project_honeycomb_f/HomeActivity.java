@@ -18,12 +18,13 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
+        fAuth = FirebaseAuth.getInstance();
         //Pre-registered Comment out to test
-        //if(fAuth.getCurrentUser() != null)
-        //{
-        //    startActivity(new Intent(getApplicationContext(), MainMenu.class));
-        //    finish();
-        //}
+        if(fAuth.getCurrentUser() != null)
+        {
+            startActivity(new Intent(getApplicationContext(), MainMenu.class));
+            finish();
+        }
 
         SignUpButton = findViewById(R.id.SignUp);
         LogInButton = findViewById(R.id.LogIn);
