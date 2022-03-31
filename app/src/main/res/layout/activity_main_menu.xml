@@ -19,7 +19,7 @@
 
             <TextView
                 android:id="@+id/title"
-                android:layout_width="245dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:minHeight="?actionBarSize"
@@ -31,8 +31,7 @@
                 android:id="@+id/SignOut"
                 style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
-                android:layout_height="59dp"
-                android:layout_weight="1"
+                android:layout_height="match_parent"
                 android:text="@string/SignOutButton" />
         </LinearLayout>
 
@@ -58,8 +57,8 @@
             <Button
                 android:id="@+id/Settings"
                 style="?android:attr/buttonBarButtonStyle"
-                android:layout_width="163dp"
-                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
                 android:text="@string/SettingsButton" />
 
         </LinearLayout>
@@ -68,7 +67,7 @@
             android:id="@+id/Feedback"
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:text="@string/FeedbackAccess" />
 
         <com.google.android.material.tabs.TabLayout
