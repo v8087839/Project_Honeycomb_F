@@ -5,9 +5,9 @@
     <application
         android:allowBackup="true"
         android:fullBackupContent="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/bizzbuzzlogo"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/bizzbuzzlogo"
         android:supportsRtl="true"
         android:theme="@style/Theme.Project_Honeycomb_F">
         <activity
@@ -15,6 +15,12 @@
             android:exported="false" />
         <activity
             android:name=".WeekViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Feedback"
+            android:exported="false" />
+        <activity
+            android:name=".ReportBugs"
             android:exported="false" />
         <activity
             android:name=".Edit_Profile"

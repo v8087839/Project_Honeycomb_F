@@ -22,6 +22,10 @@ import uk.ac.tees.v8087839.project_honeycomb_f.databinding.ActivityMainMenuBindi
 public class MainMenu extends AppCompatActivity {
 
     Button editProfile;
+    Button Feedback;
+    Button Bugs;
+    Button Settings;
+    Button SignOut;
     private ActivityMainMenuBinding binding;
 
     @Override
@@ -36,17 +40,24 @@ public class MainMenu extends AppCompatActivity {
         viewPager.setAdapter(sectionsPagerAdapter);
         TabLayout tabs = binding.tabs;
         tabs.setupWithViewPager(viewPager);
-        FloatingActionButton fab = binding.fab;
 
+        SignOut = findViewById(R.id.SignOut);
         editProfile = findViewById(R.id.editProfile);
+        Feedback = findViewById(R.id.Feedback);
+        Bugs = findViewById(R.id.Bugs);
+        Settings = findViewById(R.id.Settings);
 
-        fab.setOnClickListener(new View.OnClickListener() {
+        //Settings access
+        Settings.setOnClickListener(new View.OnClickListener()
+        {
             @Override
-            public void onClick(View view) {
+            public void onClick(View view)
+            {
                 startActivity(new Intent(getApplicationContext(), Settings.class));
             }
         });
 
+        //Edit profile access
         editProfile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -54,12 +65,38 @@ public class MainMenu extends AppCompatActivity {
             }
         });
 
+        //Feedback access
+        Feedback.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                startActivity(new Intent(getApplicationContext(), Feedback.class));
+            }
+        });
+
+        //Report bugs access
+        Bugs.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                startActivity(new Intent(getApplicationContext(), ReportBugs.class));
+            }
+        });
+
+
         //LogOut method (When this is attached to a button the pre-registered if statement in SignUp class can also be active)
 
-        //public void logout(View view){
-        //    FirebaseAuth.getInstance().signOut();
-        //    startActivity(new Intent(getApplicationContext(), HomeActivity.class));
-        //    finish();
-        //}
+        SignOut.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                FirebaseAuth.getInstance().signOut();
+                startActivity(new Intent(getApplicationContext(), HomeActivity.class));
+                finish();
+            }
+        });
     }
 }
