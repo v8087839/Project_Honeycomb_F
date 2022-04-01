@@ -10,8 +10,8 @@
         <option name="gradleJvm" value="11" />
         <option name="modules">
           <set>
-            <option value="/home/scm-studs/w9093284/AndroidStudioProjects/Project_Honeycomb_F" />
-            <option value="/home/scm-studs/w9093284/AndroidStudioProjects/Project_Honeycomb_F/app" />
+            <option value="/home/scm-studs/v8087839/AndroidStudioProjects/Project_Honeycomb_F2.0" />
+            <option value="/home/scm-studs/v8087839/AndroidStudioProjects/Project_Honeycomb_F2.0/app" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

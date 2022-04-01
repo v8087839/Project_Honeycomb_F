@@ -11,6 +11,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Project_Honeycomb_F">
         <activity
+            android:name=".EventEditActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WeekViewActivity"
+            android:exported="false" />
+        <activity
             android:name=".Feedback"
             android:exported="false" />
         <activity
@@ -28,6 +34,9 @@
             android:exported="false" />
         <activity
             android:name=".SignUp"
+            android:exported="false" />
+        <activity
+            android:name=".Calendar"
             android:exported="false" />
         <activity
             android:name=".HomeActivity"

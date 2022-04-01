@@ -25,6 +25,10 @@
     <string name="signupB">Sign-Up</string>
     <string name="Welcome">Welcome to BizzBuzz</string>
     <string name="ToDo">Image Description</string>
+
+    <string name="previousMonthButtonText"><![CDATA[<-]]></string>
+    <string name="nextMonthButtonText"><![CDATA[->]]></string>
+
     <string name="title_activity_main_menu">MainMenu</string>
     <string name="todo">TODO</string>
     <string name="title_activity_settings">Settings</string>
@@ -58,6 +62,13 @@
     <string name="tab_friends_text">FRIENDS</string>
     <string name="tab_chat_text">CHAT</string>
     <string name="editProfileButton">Edit Profile</string>
+    <string name="weeklyButtonText">Weekly</string>
+    <string name="newEventButtonText">New Event</string>
+    <string name="eventNameTextViewText">Name:</string>
+    <string name="eventDateTextViewText">Date</string>
+    <string name="eventTimeTextViewText">Time</string>
+    <string name="saveEventButtonText">Save</string>
+    >>>>>>> master
     <string name="FeedbackTitle">Feedback</string>
     <string name="ReportBugsTitle">Report Bugs</string>
     <string name="FeedbackDesc">Here you can provide feedback to the developers to help us to improve the app and the experience it provides.</string>
