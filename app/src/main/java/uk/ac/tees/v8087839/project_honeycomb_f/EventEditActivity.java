@@ -27,6 +27,7 @@ public class EventEditActivity extends AppCompatActivity {
         initWidgets();
         time = LocalTime.now();
         eventDateTV.setText("Date: " + CalendarUtils.formattedDate(CalendarUtils.selectedDate));
+        eventDateTV.setText("Time: " + CalendarUtils.formattedTime(time));
     }
 
     private void initWidgets() {
@@ -36,6 +37,9 @@ public class EventEditActivity extends AppCompatActivity {
     }
 
     public void saveEventAction(View view) {
-
+        String eventName = eventNameET.getText().toString();
+        Event newEvent = new Event(eventName, CalendarUtils.selectedDate, time);
+        Event.eventsList.add(newEvent);
+        finish();
     }
 }
