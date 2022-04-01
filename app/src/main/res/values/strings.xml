@@ -79,5 +79,6 @@
     <string name="ReportBugsAccess">Report a bug</string>
     <string name="FeedbackAccess">Give some feedback to the devs</string>
     <string name="SettingsButton">Settings</string>
-    <string name="SignOutButton">SignOut</string>
+    <string name="SignOutButton">SIGN OUT</string>
+    <string name="TimetableButton">Timetable</string>
 </resources>
