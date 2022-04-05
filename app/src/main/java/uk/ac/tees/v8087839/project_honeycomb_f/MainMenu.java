@@ -42,9 +42,11 @@ public class MainMenu extends AppCompatActivity {
         });
 
         //Edit profile access
-        editProfile.setOnClickListener(new View.OnClickListener() {
+        editProfile.setOnClickListener(new View.OnClickListener()
+        {
             @Override
-            public void onClick(View view) {
+            public void onClick(View view)
+            {
                 startActivity(new Intent(getApplicationContext(), Edit_Profile.class));
             }
         });
@@ -88,7 +90,7 @@ public class MainMenu extends AppCompatActivity {
             @Override
             public void onClick(View view)
             {
-                startActivity(new Intent(getApplicationContext(), Timetable.class));
+                startActivity(new Intent(getApplicationContext(), Calendar.class));
             }
         });
     }

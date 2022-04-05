@@ -23,10 +23,10 @@ public class Feedback extends AppCompatActivity
         setContentView(R.layout.activity_feedback);
 
         //Assigning Variables to their respective UI elements
-        Send.findViewById(R.id.Send);
-        Cancel.findViewById(R.id.Cancel);
-        FeedbackHead.findViewById(R.id.FeedbackHead);
-        FeedbackBody.findViewById(R.id.FeedbackBody);
+        Send = findViewById(R.id.Send);
+        Cancel = findViewById(R.id.Cancel);
+        FeedbackHead = findViewById(R.id.FeedbackHead);
+        FeedbackBody = findViewById(R.id.FeedbackBody);
 
         Send.setOnClickListener(new View.OnClickListener()
         {
